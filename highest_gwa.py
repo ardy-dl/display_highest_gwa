@@ -2,7 +2,11 @@
 # The program will outputs the name of the student who got the highest GWA (including the GWA).
 
 # name a list
-# open classrecord.txt (read)
+master_list = []
+# open class_record.txt (read)
+with open("class_record.txt") as ref_file:
+    for line in ref_file:
+        print(line)
 # seperate name and gwa by using list
 # find the highest gwa
 # display name and gwa
