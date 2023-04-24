@@ -11,5 +11,12 @@ with open("class_record.txt") as ref_file:
         master_list.append({"name": name, "GWA":float(GWA)})
     # find the highest gwa
     highest_GWA = min(master_list, key=lambda x: x["GWA"]) 
-    # display name and gwa
-    print(highest_GWA["name"], "is the highest with the GWA of", highest_GWA["GWA"])
+    # find all the students who got the highest grade
+    best_students = [student for student in master_list if student["GWA"] == highest_GWA["GWA"]]
+    # display name and gwa 
+    if len(best_students) == 1:
+        print(highest_GWA["name"], "is the highest with the GWA of", highest_GWA["GWA"])
+    else:
+        print("Here are the students who got the highest GWA:\n", highest_GWA["GWA"])
+        for students in best_students:
+            print(students["name"], "-", students["GWA"])
