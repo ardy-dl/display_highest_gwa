@@ -6,7 +6,9 @@ master_list = []
 # open class_record.txt (read)
 with open("class_record.txt") as ref_file:
     for line in ref_file:
-        print(line)
-# seperate name and gwa by using list
-# find the highest gwa
-# display name and gwa
+        # seperate name and gwa by using list
+        name, GWA = line.strip().split(",")
+        master_list.append({"name": name, "GWA":float(GWA)})
+        print(master_list)
+    # find the highest gwa
+    # display name and gwa
