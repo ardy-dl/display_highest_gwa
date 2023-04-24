@@ -11,5 +11,5 @@ with open("class_record.txt") as ref_file:
         master_list.append({"name": name, "GWA":float(GWA)})
     # find the highest gwa
     highest_GWA = min(master_list, key=lambda x: x["GWA"]) 
-    print(highest_GWA)
     # display name and gwa
+    print(highest_GWA["name"], "is the highest with the GWA of", highest_GWA["GWA"])
