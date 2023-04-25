@@ -2,7 +2,7 @@ Rachelle Alim,1.22
 Aly Balote,1.24
 Leila Bergado,1.16
 Bee Calar,1.06
-Faith Casillano,1.06
+Faith Casillano,1.06    
 Dein Esguerra,1.25
 Rica Fernandez,1.13
 Zemerelin Labayo,1.19

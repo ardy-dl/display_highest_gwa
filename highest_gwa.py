@@ -21,7 +21,7 @@ with open("class_record.txt") as ref_file:
     # display name and gwa 
     if len(best_students) == 1:
         f = Figlet(font = "banner3-D")
-        design_1 = colored(highest_GWA["name"], "is the highest with the GWA of", highest_GWA["GWA"], color= "green", attrs = ["italic"])
+        design_1 = colored(highest_GWA["name"], "is the highest with the GWA of", highest_GWA["GWA"], "green", attrs = ["italic"])
         print(design_1)
     else:
         f = Figlet(font = "banner3-D")
